@@ -1,8 +1,13 @@
 package com.sparta.sortmanager;
 
-public class Sorter {
-    public static int[] mergeSort(int[] arr) {
+public abstract class Sorter {
+    public abstract int[] sort(int[] arr);
 
-        return null;
+    public static boolean isSorted(int[] arr) {
+        if(arr == null) return true;
+        for(int i = 0; i < (arr.length - 1); i++) {
+            if(arr[i] > arr[i + 1]) return false;
+        } // if the above condition never applies...
+        return true;
     }
 }
