@@ -1,15 +1,14 @@
-package com.sparta.sortmanager;
+package com.sparta.sortmanager.model;
 
-public class BubbleSorter extends Sorter{
+public class BubbleSorter implements Sorter {
 
     /*
      * Performs a bubble sort on the given array;
      * i.e. swaps incorrectly ordered adjacent elements
      * until there are none to swap.
      */
-    @Override
     public int[] sort(int[] arr) {
-        while(!isSorted(arr)) {
+        while(!Sorter.isSorted(arr)) {
             arr = pass(arr);
         }
         return arr;

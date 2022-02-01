@@ -1,6 +1,6 @@
-package com.sparta.sortmanager;
+package com.sparta.sortmanager.model;
 
-public class MergeSorter extends Sorter{
+public class MergeSorter implements Sorter{
 
     /*
      * Performs a top-down merge sort,
@@ -8,7 +8,6 @@ public class MergeSorter extends Sorter{
      * until they are trivially sorted
      * before merging them recursively.
      */
-    @Override
     public int[] sort(int[] arr) {
         if(arr == null) return null;
         if(arr.length == 1) return arr;

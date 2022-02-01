@@ -1,9 +1,9 @@
-package com.sparta.sortmanager;
+package com.sparta.sortmanager.model;
 
-public abstract class Sorter {
-    public abstract int[] sort(int[] arr);
+public interface Sorter {
+    int[] sort(int[] arr);
 
-    public static boolean isSorted(int[] arr) {
+    static boolean isSorted(int[] arr) {
         if(arr == null) return true;
         for(int i = 0; i < (arr.length - 1); i++) {
             if(arr[i] > arr[i + 1]) return false;
