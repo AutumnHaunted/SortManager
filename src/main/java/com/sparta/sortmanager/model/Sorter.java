@@ -1,5 +1,7 @@
 package com.sparta.sortmanager.model;
 
+import static com.sparta.sortmanager.main.Main.logger;
+
 public interface Sorter {
     int[] sort(int[] arr);
 
@@ -10,4 +12,6 @@ public interface Sorter {
         } // if the above condition never applies...
         return true;
     }
+
+    static void logStart(int[] arr) { logger.info("Sorting " + java.util.Arrays.toString(arr)); }
 }

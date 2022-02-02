@@ -8,6 +8,7 @@ public class BubbleSorter implements Sorter {
      * until there are none to swap.
      */
     public int[] sort(int[] arr) {
+        Sorter.logStart(arr);
         while(!Sorter.isSorted(arr)) {
             arr = pass(arr);
         }

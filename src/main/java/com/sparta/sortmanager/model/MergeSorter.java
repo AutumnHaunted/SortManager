@@ -1,5 +1,7 @@
 package com.sparta.sortmanager.model;
 
+import static com.sparta.sortmanager.main.Main.logger;
+
 public class MergeSorter implements Sorter{
 
     /*
@@ -9,11 +11,13 @@ public class MergeSorter implements Sorter{
      * before merging them recursively.
      */
     public int[] sort(int[] arr) {
-        if(arr == null) return null;
+        Sorter.logStart(arr);
+        if(arr == null) { logger.error("Could not sort null array."); return null; }
         if(arr.length == 1) return arr;
 
-        int[] arrA = new int[(int) Math.ceil(arr.length / 2)];
-        int[] arrB = new int[(int) Math.floor(arr.length / 2)];
+        int[] arrA = new int[(int) Math.ceil(((double) arr.length) / 2)];
+        int[] arrB = new int[(int) Math.floor(((double) arr.length) / 2)];
+        logger.info("Arrays of sizes " + arrA.length + " and " + arrB.length);
         for(int i = 0; i < arr.length; i++) {
             if(i < arrA.length) arrA[i] = arr[i];
             else arrB[i - arrA.length] = arr[i];
@@ -35,7 +39,7 @@ public class MergeSorter implements Sorter{
         int aPos = 0, bPos = 0;
 
         for(int i = 0; i < arrOut.length; i++) {
-            if(arrA[aPos] < arrB[bPos]) {
+            if(isNextFromA(arrA, arrB, aPos, bPos)) {
                 arrOut[i] = arrA[aPos];
                 aPos++;
             } else {
@@ -44,5 +48,11 @@ public class MergeSorter implements Sorter{
             }
         }
         return arrOut;
+    }
+
+    private boolean isNextFromA(int[] arrA, int[] arrB, int aPos, int bPos) {
+        if(aPos >= arrA.length) return false;
+        if(bPos >= arrB.length) return true;
+        return (arrA[aPos] < arrB[bPos]);
     }
 }

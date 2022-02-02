@@ -1,0 +1,33 @@
+FILE [INFO ] 2022-02-02 13:55:13,356 main Sort Manager Logger - Sorter Type: bubble
+FILE [INFO ] 2022-02-02 13:58:08,140 main Sort Manager Logger - Sorter Type: bubble
+FILE [INFO ] 2022-02-02 13:59:55,072 main Sort Manager Logger - Sorter Type: bubble
+FILE [INFO ] 2022-02-02 14:00:58,505 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:01:17,352 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:06:33,557 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:09:14,674 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:10:29,404 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:11:37,164 main Sort Manager Logger - Sorter Type: bubble
+FILE [INFO ] 2022-02-02 14:12:09,572 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:14:17,794 main Sort Manager Logger - Sorter Type: bubble
+FILE [INFO ] 2022-02-02 14:14:47,351 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:16:19,602 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:22:12,543 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:28:06,820 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:30:59,481 main Sort Manager Logger - Sorter Type: merge
+FILE [INFO ] 2022-02-02 14:31:07,081 main Sort Manager Logger - Array: [-297251400, 1118106942, 1625439569, -900965269, 563539493, -933779032]
+FILE [INFO ] 2022-02-02 14:31:07,108 main Sort Manager Logger - Sorting [-297251400, 1118106942, 1625439569, -900965269, 563539493, -933779032]
+FILE [INFO ] 2022-02-02 14:31:07,118 main Sort Manager Logger - Arrays of sizes 3 and 3
+FILE [INFO ] 2022-02-02 14:31:07,119 main Sort Manager Logger - Sorting [-297251400, 1118106942, 1625439569]
+FILE [INFO ] 2022-02-02 14:31:07,120 main Sort Manager Logger - Arrays of sizes 2 and 1
+FILE [INFO ] 2022-02-02 14:31:07,120 main Sort Manager Logger - Sorting [-297251400, 1118106942]
+FILE [INFO ] 2022-02-02 14:31:07,121 main Sort Manager Logger - Arrays of sizes 1 and 1
+FILE [INFO ] 2022-02-02 14:31:07,121 main Sort Manager Logger - Sorting [-297251400]
+FILE [INFO ] 2022-02-02 14:31:07,122 main Sort Manager Logger - Sorting [1118106942]
+FILE [INFO ] 2022-02-02 14:31:07,122 main Sort Manager Logger - Sorting [1625439569]
+FILE [INFO ] 2022-02-02 14:31:07,122 main Sort Manager Logger - Sorting [-900965269, 563539493, -933779032]
+FILE [INFO ] 2022-02-02 14:31:07,123 main Sort Manager Logger - Arrays of sizes 2 and 1
+FILE [INFO ] 2022-02-02 14:31:07,123 main Sort Manager Logger - Sorting [-900965269, 563539493]
+FILE [INFO ] 2022-02-02 14:31:07,124 main Sort Manager Logger - Arrays of sizes 1 and 1
+FILE [INFO ] 2022-02-02 14:31:07,124 main Sort Manager Logger - Sorting [-900965269]
+FILE [INFO ] 2022-02-02 14:31:07,124 main Sort Manager Logger - Sorting [563539493]
+FILE [INFO ] 2022-02-02 14:31:07,125 main Sort Manager Logger - Sorting [-933779032]
