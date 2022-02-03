@@ -31,3 +31,23 @@ FILE [INFO ] 2022-02-02 14:31:07,124 main Sort Manager Logger - Arrays of sizes 
 FILE [INFO ] 2022-02-02 14:31:07,124 main Sort Manager Logger - Sorting [-900965269]
 FILE [INFO ] 2022-02-02 14:31:07,124 main Sort Manager Logger - Sorting [563539493]
 FILE [INFO ] 2022-02-02 14:31:07,125 main Sort Manager Logger - Sorting [-933779032]
+FILE [INFO ] 2022-02-03 17:10:23,233 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:10:38,059 main Sort Manager Logger - Array: [6, 1, 4, 2, 5, 3, 2]
+FILE [INFO ] 2022-02-03 17:36:21,253 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:36:35,653 main Sort Manager Logger - Array: [3, 6, 5, 1, 8]
+FILE [INFO ] 2022-02-03 17:36:47,200 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:37:10,165 main Sort Manager Logger - Array: [4, 7, 2, 5, 1, 8, 5, 2]
+FILE [INFO ] 2022-02-03 17:38:13,521 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:38:17,475 main Sort Manager Logger - Array: [2, 1, 2, 3]
+FILE [INFO ] 2022-02-03 17:39:31,373 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:39:36,587 main Sort Manager Logger - Array: [2, 1, 2, 3]
+FILE [INFO ] 2022-02-03 17:42:31,950 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:42:36,252 main Sort Manager Logger - Array: [2, 1, 2, 3]
+FILE [INFO ] 2022-02-03 17:45:26,980 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:45:29,555 main Sort Manager Logger - Array: [2, 1, 2, 3]
+FILE [INFO ] 2022-02-03 17:46:22,469 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:46:27,555 main Sort Manager Logger - Array: [2, 1, 2, 3]
+FILE [INFO ] 2022-02-03 17:47:04,523 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:47:06,832 main Sort Manager Logger - Array: [2, 1, 2, 3]
+FILE [INFO ] 2022-02-03 17:47:16,446 main Sort Manager Logger - Sorter Type: tree
+FILE [INFO ] 2022-02-03 17:47:38,528 main Sort Manager Logger - Array: [6, 2, 4, 52, 6, 1, 5, 2, 6, 3, 41, 10, 11, 41, 3, 6]

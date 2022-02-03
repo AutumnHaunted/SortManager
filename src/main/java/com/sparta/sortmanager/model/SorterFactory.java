@@ -6,6 +6,7 @@ public class SorterFactory {
         return switch(sorterType) {
             case "bubble" -> new BubbleSorter();
             case "merge" -> new MergeSorter();
+            case "tree" -> new TreeSorter();
             default -> null;
         };
     }

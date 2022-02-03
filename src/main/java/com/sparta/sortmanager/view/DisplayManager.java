@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class DisplayManager {
 
-    private final String PROMPT_SORTER_TYPE = "Which sort type would you like? \"bubble\" or \"merge\"? (or type \"q\" to quit)";
+    private final String PROMPT_SORTER_TYPE = "Which sort type would you like? \"bubble\", \"merge\", or binary search \"tree\"? (or type \"q\" to quit)";
     private final String PROMPT_RANDOM_CHOICE = "Would you prefer a random array (\"r\") or to input an array (\"i\")? (or type \"q\" to quit)";
     private final String PROMPT_INTEGERS = "Please input your array in the form of a comma-separated list of integers. (or type \"q\" to quit)";
     private final String PROMPT_SIZE = "Please choose the size of the random array. (or type \"q\" to quit)";
@@ -15,7 +15,7 @@ public class DisplayManager {
     private final String QUIT_INPUT = "q";
     private final String ARRAY_STRING_DELIMITER = ",";
 
-    private final String[] VALID_SORTER_TYPES = {"bubble", "merge"};
+    private final String[] VALID_SORTER_TYPES = {"bubble", "merge", "tree"};
 
     private String promptInput(String prompt) {
         Scanner s = new Scanner(System.in);
