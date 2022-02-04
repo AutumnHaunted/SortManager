@@ -1,4 +1,5 @@
 # SortManager
+*A Java program by Autumn Pelešová / AutumnHaunted*
 A program that manages the sorting of integer arrays.
 
 ## Contents
@@ -10,6 +11,7 @@ A program that manages the sorting of integer arrays.
    - [Input syntax](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#input-syntax)
    - [Options](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#options)
 3. [Timing](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#timing)
+4. [Technologies used](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#technologies-used)
 
 ## Sorters
 There are currently three types of sorting algorithm implemented in this program.
@@ -56,3 +58,9 @@ Users can...
 ## Timing
 Every time a sort is carried out, it is timed, in milliseconds. This allows the user to compare the execution of different sort types on different kinds of arrays.
 Some sort types work better on arrays that are already almost sorted while others work better when the array is highly disordered. The timing information can help you get an idea of this.
+
+## Technologies used
+- JetBrains IntelliJ Idea Ultimate
+- Apache Maven
+- Apache Log4j
+- JUnit (and JUnit Jupiter)
