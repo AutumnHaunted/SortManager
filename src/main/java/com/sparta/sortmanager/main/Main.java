@@ -14,7 +14,13 @@ public class Main {
     public static void main(String[] args) {
         SortManager sm = new SortManager();
         DisplayManager dm = new DisplayManager();
-        String sorterType = dm.getSorterType();
+        String[] sorterTypes = dm.getSorterTypes();
+        for(String sorterType : sorterTypes) {
+            oneSort(sm, dm, sorterType);
+        }
+    }
+
+    public static void oneSort(SortManager sm, DisplayManager dm, String sorterType) {
         logger.info("Sorter Type: " + sorterType);
         int[] initArr;
         if(dm.getIsRandom()) initArr = sm.getRandomArray(dm.getArraySize());

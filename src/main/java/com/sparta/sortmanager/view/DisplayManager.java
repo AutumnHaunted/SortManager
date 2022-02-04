@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class DisplayManager {
 
-    private final String PROMPT_SORTER_TYPE = "Which sort type would you like? \"bubble\", \"merge\", or binary search \"tree\"? (or type \"q\" to quit)";
+    private final String PROMPT_SORTER_TYPES = "Which sort types would you like? Type a comma-separated list of one or more of the following: \"bubble\", \"merge\", (binary search) \"tree\" (or type \"q\" to quit)";
     private final String PROMPT_RANDOM_CHOICE = "Would you prefer a random array (\"r\") or to input an array (\"i\")? (or type \"q\" to quit)";
     private final String PROMPT_INTEGERS = "Please input your array in the form of a comma-separated list of integers. (or type \"q\" to quit)";
     private final String PROMPT_SIZE = "Please choose the size of the random array. (or type \"q\" to quit)";
@@ -29,18 +29,45 @@ public class DisplayManager {
     }
 
 
-    public String getSorterType() {
-        String sorterType;
+    public String getSorterType(String sorterType) {
+        if(Arrays.stream(VALID_SORTER_TYPES).anyMatch(sorterType::equalsIgnoreCase)) {
+            return sorterType;
+        } else {
+            System.err.println(PROMPT_INVALID_INPUT);
+            return null;
+        }
+    }
+
+    public String[] getSorterTypes() {
+        String userInput;
+        String[] sorterTypes;
+
         do {
-            sorterType = promptInput(PROMPT_SORTER_TYPE);
-            if(Arrays.stream(VALID_SORTER_TYPES).anyMatch(sorterType::equalsIgnoreCase)) {
-                return sorterType;
-            } else if(sorterType.equals(QUIT_INPUT)){
+            userInput = promptInput(PROMPT_SORTER_TYPES).replace(" ", "");
+            if(userInput.equals(QUIT_INPUT)) {
                 exit();
             } else {
-                System.err.println(PROMPT_INVALID_INPUT);
+                sorterTypes = iterateSorterTypes(userInput);
+                if(sorterTypes != null) return sorterTypes; // else try again
             }
         } while(true);
+    }
+
+    public String[] iterateSorterTypes(String userInput) {
+        String[] userListString;
+        String[] sorterTypes;
+        String currentString;
+        userListString = userInput.split(ARRAY_STRING_DELIMITER);
+        sorterTypes = new String[userListString.length];
+        for(int i = 0; i < userListString.length; i++) {
+            currentString = getSorterType(userListString[i]);
+            if(currentString == null || Arrays.stream(sorterTypes).anyMatch(currentString::equals)) {
+                System.err.println(PROMPT_INVALID_INPUT);
+                return null;
+            } // else
+            sorterTypes[i] = currentString;
+        }
+        return sorterTypes;
     }
 
     public boolean getIsRandom() {
@@ -99,4 +126,5 @@ public class DisplayManager {
         System.out.printf("Initial array: %s", Arrays.toString(initArr));                System.out.println();
         System.out.printf("Sorted using %s sort: %s", sorterType, Arrays.toString(sortedArr));  System.out.println();
     }
+
 }
