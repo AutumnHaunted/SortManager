@@ -2,14 +2,14 @@
 A program that manages the sorting of integer arrays.
 
 ## Contents
-1. Sorters
-   - Bubble Sort
-   - Merge Sort
-   - Binary Search Tree Sort
-2. Using the program
-   - Input syntax
-   - Options
-3. Timing
+1. [Sorters](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#sorters)
+   - [Bubble Sort](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#bubble-sort)
+   - [Merge Sort](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#merge-sort)
+   - [Binary Search Tree Sort](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#binary-search-tree-sort)
+2. [Using the program](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#using-the-program)
+   - [Input syntax](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#input-syntax)
+   - [Options](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#options)
+3. [Timing](https://github.com/AutumnHaunted/SortManager/blob/main/README.md#timing)
 
 ## Sorters
 There are currently three types of sorting algorithm implemented in this program.
