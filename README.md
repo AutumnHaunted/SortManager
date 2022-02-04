@@ -1,5 +1,6 @@
 # SortManager
 *A Java program by Autumn Pelešová / AutumnHaunted*
+
 A program that manages the sorting of integer arrays.
 
 ## Contents
