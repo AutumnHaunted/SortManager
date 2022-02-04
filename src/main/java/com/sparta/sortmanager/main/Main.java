@@ -36,15 +36,21 @@ public class Main {
         if(dm.getIsRandom()) initArr = sm.getRandomArray(dm.getArraySize());
         else initArr = dm.getUserArray();
         logger.info("Array: " + Arrays.toString(initArr));
+        long startTime = System.nanoTime();
         int[] sortedArr = sm.performSort(Arrays.copyOf(initArr, initArr.length), sorterType);
-        dm.printResults(initArr, sortedArr, sorterType);
+        long endTime = System.nanoTime();
+        double elapsedTime = ((endTime - startTime) / 1000000);
+        dm.printResults(initArr, sortedArr, sorterType, elapsedTime);
     }
 
     public static void oneSort(SortManager sm, DisplayManager dm, String sorterType, int[] initArr) {
         logger.info("Sorter Type: " + sorterType);
         System.out.println("Sorter Type: " + sorterType);
         logger.info("Array: " + Arrays.toString(initArr));
+        long startTime = System.nanoTime();
         int[] sortedArr = sm.performSort(Arrays.copyOf(initArr, initArr.length), sorterType);
-        dm.printResults(initArr, sortedArr, sorterType);
+        long endTime = System.nanoTime();
+        double elapsedTime = ((endTime - startTime) / 1000000);
+        dm.printResults(initArr, sortedArr, sorterType, elapsedTime);
     }
 }

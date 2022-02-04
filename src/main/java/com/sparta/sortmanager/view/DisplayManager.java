@@ -136,8 +136,9 @@ public class DisplayManager {
         } while(true);
     }
 
-    public void printResults(int[] initArr, int[] sortedArr, String sorterType) {
-        System.out.printf("Initial array: %s", Arrays.toString(initArr));                System.out.println();
+    public void printResults(int[] initArr, int[] sortedArr, String sorterType, double elapsedTime) {
+        System.out.printf("Initial array: %s", Arrays.toString(initArr));                       System.out.println();
         System.out.printf("Sorted using %s sort: %s", sorterType, Arrays.toString(sortedArr));  System.out.println();
+        System.out.printf("Sorted in %s milliseconds.", elapsedTime);                           System.out.println();
     }
 }
