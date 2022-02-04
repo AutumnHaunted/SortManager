@@ -9,6 +9,7 @@ public class DisplayManager {
     private final String PROMPT_RANDOM_CHOICE = "Would you prefer a random array (\"r\") or to input an array (\"i\")? (or type \"q\" to quit)";
     private final String PROMPT_INTEGERS = "Please input your array in the form of a comma-separated list of integers. (or type \"q\" to quit)";
     private final String PROMPT_SIZE = "Please choose the size of the random array. (or type \"q\" to quit)";
+    private final String PROMPT_SAME_INPUT = "Would you like to sort the same array (\"s\") or different arrays (\"d\") with each sort method? (or type \"q\" to quit)";
     private final String PROMPT_INVALID_INPUT = "Invalid input. Please try again.";
     private final String PROMPT_EXIT_CONFIRM = "Are you sure you want to quit? (y/n)";
 
@@ -122,9 +123,21 @@ public class DisplayManager {
         } while(true);
     }
 
+    public boolean getSameInput() {
+        String isSameInput;
+        do {
+            isSameInput = promptInput(PROMPT_SAME_INPUT).toLowerCase();
+            switch (isSameInput) {
+                case "s" -> { return true; }
+                case "d" -> { return false; }
+                case QUIT_INPUT -> { exit(); break; }
+                default -> { System.err.println(PROMPT_INVALID_INPUT); }
+            }
+        } while(true);
+    }
+
     public void printResults(int[] initArr, int[] sortedArr, String sorterType) {
         System.out.printf("Initial array: %s", Arrays.toString(initArr));                System.out.println();
         System.out.printf("Sorted using %s sort: %s", sorterType, Arrays.toString(sortedArr));  System.out.println();
     }
-
 }

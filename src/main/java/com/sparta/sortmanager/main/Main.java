@@ -15,16 +15,34 @@ public class Main {
         SortManager sm = new SortManager();
         DisplayManager dm = new DisplayManager();
         String[] sorterTypes = dm.getSorterTypes();
-        for(String sorterType : sorterTypes) {
-            oneSort(sm, dm, sorterType);
+        int[] initArr;
+        if(sorterTypes.length > 1 && dm.getSameInput()) {
+            if(dm.getIsRandom()) initArr = sm.getRandomArray(dm.getArraySize());
+            else initArr = dm.getUserArray();
+            for (String sorterType : sorterTypes) {
+                oneSort(sm, dm, sorterType, initArr);
+            }
+        } else {
+            for (String sorterType : sorterTypes) {
+                oneSort(sm, dm, sorterType);
+            }
         }
     }
 
     public static void oneSort(SortManager sm, DisplayManager dm, String sorterType) {
         logger.info("Sorter Type: " + sorterType);
+        System.out.println("Sorter Type: " + sorterType);
         int[] initArr;
         if(dm.getIsRandom()) initArr = sm.getRandomArray(dm.getArraySize());
         else initArr = dm.getUserArray();
+        logger.info("Array: " + Arrays.toString(initArr));
+        int[] sortedArr = sm.performSort(Arrays.copyOf(initArr, initArr.length), sorterType);
+        dm.printResults(initArr, sortedArr, sorterType);
+    }
+
+    public static void oneSort(SortManager sm, DisplayManager dm, String sorterType, int[] initArr) {
+        logger.info("Sorter Type: " + sorterType);
+        System.out.println("Sorter Type: " + sorterType);
         logger.info("Array: " + Arrays.toString(initArr));
         int[] sortedArr = sm.performSort(Arrays.copyOf(initArr, initArr.length), sorterType);
         dm.printResults(initArr, sortedArr, sorterType);
