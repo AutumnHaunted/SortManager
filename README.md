@@ -38,10 +38,12 @@ As BSTs cannot contain duplicates, the wrapper class checks for duplicates and a
 ### Input syntax
 To use the program, the user can follow the prompts given by the console. Valid inputs will be specified in quotation marks. For example:
 > Would you prefer a random array ("r") or to input an array ("i")? (or type "q" to quit)
+
 Here, the valid inputs are `r`, `i`, and `q`. Inputting anything else will result in an error.
 
 Sometimes, a prompt may ask you to enter a comma-separated list, such as here:
 > Please input your array in the form of a comma-separated list of integers. (or type "q" to quit)
+
 An example of a valid input for this prompt would be the following:
 `5, 2, 7, 3, 4, 2, 6`
 
